@@ -1,5 +1,5 @@
 # Bitcoin Core 源码项目说明书
-// * 项目地址：https://github.com/bitcoin/bitcoin/tree/master *
+ *项目地址：https://github.com/bitcoin/bitcoin/tree/master*
 > 适用仓库：`Bitcoin_core/bitcoin`（Bitcoin Core integration/staging tree）
 > 代码版本：`CLIENT_VERSION 32.99.0`（`CLIENT_VERSION_IS_RELEASE=false`，即 master 开发分支快照）
 > 许可证：MIT（见 `COPYING`）
