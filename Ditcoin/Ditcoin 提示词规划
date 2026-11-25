@@ -1,0 +1,315 @@
+# Ditcoin 提示词规划
+
+【角色】资深 C11 系统工程师 + 区块链协议实现者。
+
+【项目】Ditcoin —— 一条全新的独立区块链。继承比特币思想（UTXO/PoW/脚本/P2P），
+但拥有自己的创世块、网络身份、共识参数与经济模型。
+★ 不兼容 Bitcoin：不接入其网络、不共享地址格式、不与其钱包/工具互操作。
+★ "最小" = 功能面完整（P2P/全验证/mempool/钱包+接口），规模最小（局域网多节点跑通）。
+
+【硬约束】
+1. 主体 C11（-std=c11，无 VLA、无 GNU 扩展）；仅 Qt GUI 用 C++ 薄壳 + extern "C"。
+2. ECDSA/Schnorr 一律用 vendored libsecp256k1（开启 recovery/ecdh/extrakeys/
+   schnorrsig/ellswift），禁止自己写签名算法。
+3. 所有链参数集中在 dtc_consensus/params.c，其余文件禁止裸魔数（CI 检查）。
+4. node/wallet/gui 互不引用符号，只通过 dtc_interfaces.h 的函数指针 vtable 通信。
+5. GUI 进程禁止链接 kernel；wallet 禁止依赖 kernel。
+6. 构建 CMake；CI 全程 ASan/UBSan/TSan + libFuzzer。
+7. README 顶部标注：独立实验链，代币无价值，勿转入真实资产。
+
+════════ 第一步：生成 params.c（所有数值已验证，直接用）════════
+
+/* ---- A 链身份 ---- */
+MAGIC_MAIN      = 0x44495443   /* "DITC" */
+MAGIC_TEST      = 0x44495454
+MAGIC_REG       = 0x44495452
+P2P_PORT        = 28333 ; RPC_PORT = 28332
+TEST_P2P        = 38333 ; TEST_RPC = 38332
+HRP_MAIN        = "dtc" ; HRP_TEST = "tdtc"
+HD_PUB_VERSION  = 0xadc9ce9c   /* → dtpub... 已验证前缀稳定 */
+HD_PRV_VERSION  = 0xadc9ca62   /* → dtprv... 已验证前缀稳定 */
+P2PKH_VERSION   = 0x1e (30)    /* → D... */
+P2SH_VERSION    = 0x3f (63)    /* → S... */
+WIF_VERSION     = 0x7a (122)   /* → L/K... */
+PSBT_MAGIC      = "dtpb\xff"   /* 64747062ff, 5 bytes */
+SNAPSHOT_MAGIC  = "dtxo\xff"   /* 6474786fff, 5 bytes */
+V2_HKDF_SALT    = "ditcoin_v2_shared_secret" || MAGIC
+HD_SEED_TAG     = "Ditcoin seed"
+BIP44_COIN_TYPE = 0xD17C0DE    /* 自有，非 0 */
+UNIT: 1 DTC = 100000000 dts (ditoshi)
+
+/* ---- B 共识 ---- */
+BLOCK_INTERVAL T   = 600 s
+DAA                = LWMA-1 (target form), N = 45, 逐块调整
+MAX_BLOCK_WEIGHT   = 4000000 ; WITNESS_SCALE = 4 ; MAX_SIGOPS_COST = 80000
+COINBASE_MATURITY  = 100
+INITIAL_SUBSIDY    = 25 * 1e8 dts ; HALVING_INTERVAL = 420000  /* 总量≈20,999,999.95 DTC */
+MTP_WINDOW         = 11
+FTL                = 1800 s    /* 用节点本地时间，禁用 peer median time */
+ANCHOR_PERIOD      = 2016      /* 仅用于时间戳约束，不用于难度 */
+TIMEWARP_GRACE     = 7200 s
+BAN_64BYTE_TX      = true
+COINBASE_LOCKTIME  = height - 1 ; COINBASE_SEQ != 0xffffffff
+POW_LIMIT          = 00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+历史激活高度        = 无（全部规则从高度 0 生效）
+历史例外块          = 无
+BIP30 重复检查      = 不做（由 coinbase nLockTime 保证唯一）
+
+/* ---- C 策略（非共识，Ditcoin 自选）---- */
+MIN_RELAY_FEE = 100 dts/kvB ; INCREMENTAL_FEE = 100
+DUST_RATE = 3000 ; BYTES_PER_SIGOP = 20 ; MEMPOOL_MAX = 300 MB
+CLUSTER_LIMIT = 64 笔 ; CLUSTER_SIZE = 101 kvB
+TRUC_PARENT_VSIZE = 10000 ; TRUC_CHILD_VSIZE = 1000
+PKG_MAX_COUNT = 25 ; PKG_MAX_WEIGHT = 404000 ; MAX_CONFLICT_CLUSTERS = 100
+
+/* ---- D 创世块 ---- */
+自挖：coinbase scriptSig = OP_0 + push("Ditcoin genesis <date> anti-premine: <公开事件>")
+      输出 = 0 金额 + OP_RETURN（零预挖）；nVersion=1；hashPrevBlock=0
+      挖出后把 hash 写死进 params.c 与单元测试。
+
+════════ 第二步：目录树 + CMakeLists + dtc_interfaces.h ════════
+
+分层（严格单向依赖）：
+dtc_crypto    ← 无依赖    sha256/sha512/hmac/ripemd160/chacha20poly1305/siphash/muhash/hkdf
+dtc_util      ← crypto    arena/vec/map/log/serialize/thread/file
+dtc_consensus ← crypto    params/merkle/amount/pow/lwma/script
+dtc_secp      ← 独立      vendored libsecp256k1
+dtc_kernel    ← consensus,crypto,util   blockindex/chainstate/UTXO/validation/snapshot
+dtc_policy    ← consensus,util          standardness/topology/package/fees
+dtc_mempool   ← policy,kernel(只读)      cluster/linearize/RBF/eviction
+dtc_net       ← kernel,mempool,util      transport v1/v2/addrman/peer FSM
+dtc_wallet    ← consensus,crypto,util    descriptor/HD/PSBT/coinselect
+dtc_iface     ← vtable                   jsonrpc/rest/zmq/ipc
+dtc_qt        ← iface                    GUI C++ 薄壳
+
+════════ M0 密码学（3–4周）════════
+自研：SHA256(含 tagged hash)、SHA512、HMAC、RIPEMD160、Hash160、
+      ChaCha20 block + ChaCha20Poly1305(RFC8439)、SipHash-2-4、
+      HKDF-SHA256、MuHash3072、常量时间比较、memory_cleanse。
+带边界检查的 reader/writer（CompactSize、LE 整数）。
+
+★ tagged hash 一律加 "DTC/" 前缀。
+★ 例外：BIP0340/challenge、BIP0340/aux、BIP0340/nonce、MuSig/* 由 libsecp256k1
+  硬编码不可改，须在 SPEC 声明"Schnorr/MuSig 沿用原语域，链级隔离靠 magic/HRP/salt"。
+
+验收向量：RFC8439 / BIP340 / BIP32 CKD / BIP39 / bech32m / descriptor checksum。
+★ HD master 专属向量（seed=000102030405060708090a0b0c0d0e0f）：
+  key       = dcb95da27e9161f27180d64c7e7e0fb87cf0df1b0c36e5972ab03ab7dd17e5a4
+  chaincode = 12b79390482c7a12ecc714cbd1b3067931ab51c697a68284385e12571c931da5
+
+════════ M1 单机链（6–8周）════════
+
+LWMA-1 参考实现（已实测，直接照写）：
+  k = (N+1)*T/2                        // T=600,N=45 → k=13800
+  prev = ts[0] - T
+  L = 0 ; sumTarget = 0
+  for i in 1..N:
+      cur = (ts[i] > prev) ? ts[i] : prev+1        // 强制单调
+      L += i * min(6*T, cur - prev)                // 单块上限 6T
+      prev = cur ; sumTarget += target[i]
+  if L < N*k/3: L = N*k/3                        // = 207000
+  next_target = L * sumTarget / (k*N*N)
+  实测：稳态 1.0010 / 算力×3 → 0.3343 / 算力÷3 → 3.0010 / 乱序 1.0106
+
+验证流水线（严格按序）：
+ContextualCheckBlockHeader:
+  prev存在 → PoW(hash≤target) → nBits==lwma1_next_target(...)
+  → nTime > MTP(prev 11) → nTime ≤ now_local + 1800
+  → height%2016==0 且 height>0 : nTime ≥ T_prev − 7200
+  → height%2016==2015          : nTime ≥ T_{height−2015}
+CheckBlock:
+  非空vtx → 首笔且仅首笔coinbase → 逐笔CheckTransaction(stripped_size != 64)
+  → weight≤4M → sigops≤80000 → merkle root → witness commitment
+ConnectBlock:
+  coinbase scriptSig首项==高度(最小编码)
+  → coinbase nLockTime==height−1 且 nSequence!=0xffffffff
+  → 取prevouts → 成熟度≥100 → 输入≥输出，总额≤MAX_MONEY
+  → nLockTime/相对锁 → VerifyScript(flags恒定) → coinbase≤subsidy+fees
+  → 写undo → 更新UTXO
+
+脚本 flag 恒定启用（无高度分支）：
+  P2SH/DERSIG/NULLDUMMY/CLTV/CSV/WITNESS/TAPROOT
+  standardness 追加 STRICTENC/MINIMALDATA/CLEANSTACK/MINIMALIF/NULLFAIL/LOW_S/
+                    WITNESS_PUBKEYTYPE/CONST_SCRIPTCODE
+Taproot：tweak、tapleaf/tapbranch tagged hash(DTC/前缀)、sighash缓存、OP_CHECKSIGADD
+★ sighash 缓存是正确性要求：必须提供 precomputed data 与全部 spent outputs。
+
+链状态：最长链 = 累计 chainwork 最大（256位大数），非高度最高。
+reorg：undo回滚 → 断开块交易回灌mempool → 剔除失效/违反新锁时间的。
+
+MuHash coin 序列化（SPEC 冻结，一改作废所有快照）：
+  txid_le(32) || vout_LE32 || ((height<<1)|coinbase)_LE32
+  || amount_LE64 || CompactSize(spk_len) || spk
+
+验收：挖200块 → reindex → UTXO哈希一致；违规块库全拒。
+
+════════ M2 P2P v1（4–5周）════════
+帧 MAGIC|command(12)|len|checksum(dSHA256前4)
+握手 version→verack，夹 wtxidrelay/sendaddrv2/sendcmpct
+addrman(new/tried双表+netgroup分桶)；headers-first + minimumChainWork
+compact block: shortID = SipHash-2-4，key取自 SHA256(header||nonce) 前两个LE64，
+               截断6字节；v2用wtxid；高带宽模式≤3 peer
+inv/getdata/tx + feefilter + 孤儿池(wtxid索引)
+addrv2 网络ID沿用通用编码(IPv4=1/IPv6=2/TorV3=4/I2P=5)，与链无关
+验收：3节点同步同一tip；Bitcoin magic 连接立即断开。
+
+════════ M3 加密传输 v2（2–3周，可与M2并行）════════
+① initiator: ellswift_create() → send(64字节编码 || garbage≤4095)
+   responder: 逐字节比对前16字节 == MAGIC||"version\0\0\0\0\0"
+              一旦不匹配立即发自己的编码+garbage（不等满64字节！）；全匹配降级v1
+   ★防死锁：收到任意非零字节且自己terminator未发完时，必须至少回一字节
+② ecdh_secret = TaggedHash("DTC/ellswift_xonly_ecdh",
+                  ellswift_first || ellswift_second || ecdh_x32)
+   initiator把自己编码放前，responder把对方放前
+③ salt = "ditcoin_v2_shared_secret" || MAGIC
+   prk = HKDF-Extract(salt, ecdh_secret)
+   expand: initiator_L/initiator_P/responder_L/responder_P/
+           garbage_terminators(32B→前16init/后16resp)/session_id
+   派生后立即 memory_cleanse(secret,prk,okm)
+④ packet = FSChaCha20.enc(len_le24) || FSChaCha20Poly1305.enc(header||contents)
+   header 1字节 bit7=ignore(decoy)；总开销20字节
+   每方向第一个包的 AAD = 自己刚发的 garbage（不含terminator）
+⑤ Rekey 每224包：
+   AEAD nonce = LE32(counter%224)||LE64(counter/224)
+   rekey nonce 前4字节=FFFFFFFF，加密32个零字节取前32作新key
+   长度流同keystream供224次3字节，之后取next32字节，block counter归零
+⑥ 双方各发 contents 为空的 version 包，收到忽略内容。握手 1.5 RTT
+⑦ 短ID表 Ditcoin 自行分配写入 SPEC；1字节ID 与 \0+12字节ASCII 两种编码都必须能接收
+⑧ NODE_P2P_V2=(1<<11)；v2被立即断开时重试v1
+
+★ 专属向量 vec0（ecdh_secret = SHA256("dtc-test-0")）：
+  ecdh_secret = 7d4dbf016d724a3d7cc5a5c11bb90f020171b6833d47f9cfdd046dbb356532a5
+  initiator_P = f718874969ff625f88067f1eaadf11adb4fe68acedd00d293f8c1c57740e90a4
+  session_id  = 927e6eec610b4f69b9f78372b0cef5f5559067c5a1ec56ab80b1310fef173d9f
+测试顺序：先跑 XElligatorSwift/XSwiftECInv 解码向量 → 再跑上表派生向量 → 最后两节点联调。
+验收：两 Ditcoin 节点 session_id 一致；与 Bitcoin 节点握手必失败。
+
+════════ M4 Mempool（6–8周）════════
+cluster_t { txids[n≤64]; total_vsize≤101000; chunks[] }  /* feerate 单调递减 */
+linearization: ancestor-sort + 后处理，设迭代上限与 fallback
+挖矿取头部chunk，驱逐踢尾部chunk
+vsize = max(witness折扣后vsize, sigops_cost × bytes_per_sigop)
+
+RBF 规则（无信号位，创世起 full-RBF）：
+  R3 替换绝对费 ≥ 被替换集合总和
+  R4 增量费 ≥ 替换体积 × 0.1 dts/vB
+  R5 冲突涉及的不同 cluster 数 ≤ 100
+  R6 ★在同一 mempool 背景下★ 整体 feerate diagram 严格变好
+     before = base ∪ orig ; after = base ∪ repl
+     ⚠️ 孤立比较冲突集合会误放行"更高费率但更低绝对费"，务必带背景！
+
+TRUC 式拓扑限制：自动可替换 / 祖先后代必须同类 / 最多1父1子无carve-out /
+                 vsize≤10000 / 有未确认祖先时≤1000 / 单笔可低于minrelayfee只要package达标
+配套 sibling eviction + package RBF
+
+Package：≤25笔/≤404000weight、拓扑有序、child-with-parents、无内部冲突重复、
+         已在池先dedup、★先逐笔单独验证失败的才进package验证★、
+         package feerate只算未入池交易、父费率必须低于package费率
+P2P层只做 opportunistic 1p1c（孤儿解析触发）+ submitpackage RPC
+
+验收：diagram单调 / 无免费中继 / 驱逐保拓扑 / pinning场景断言 / 随机图fuzz。
+
+════════ M5 快照加速（3周）════════
+双chainstate共享同一BlockManager：
+  正常IBD 1个(ibd) → 加载中 2个(ibd) → 校验通过 2个(snapshot优先下载+占大部分cache)
+  → 到tip(cache转background) → background到base(比对UTXO哈希) → 重启清理 1个
+文件格式 "dtxo\xff" + version + MAGIC + base_blockhash + coins_count + 逐条coin
+校验 MuHash3072（须可交换+可删除），插入序列见 M1
+目录 chainstate_snapshot/ + base_blockhash 供重启恢复
+索引不受益仍从创世顺序建；后台校验链连接的块不发 ZMQ block 通知
+RPC loadtxoutset / dumptxoutset [latest|rollback] / getchainstates
+★ 基准用自产快照（M1挖出的链 dumptxoutset），不用任何外部链快照。
+
+════════ M6 钱包（6–8周，可与M2–M5全程并行）════════
+descriptor: pk/pkh/wpkh/sh/wsh/combo/multi/sortedmulti/tr/multi_a/sortedmulti_a/
+            addr/raw/rawtr + miniscript(wsh/tr内)
+KEY: [fingerprint/84'/0xD17C0DE'/0']dtpub.../0/*  ；multipath <0;1> 展开收款/找零
+8字符checksum算法可沿用，但★测试向量须用 dtpub 重算★
+HD: HMAC-SHA512(key="Ditcoin seed", seed) → master；CKDpriv/CKDpub；hardened 0x80000000
+    指纹 = Hash160(pubkey) 前4字节
+助记词: PBKDF2-HMAC-SHA512, salt="mnemonic"+passphrase, 2048轮, 64字节
+地址: v0→bech32, v1+→bech32m(常量0x2bc830a3), HRP dtc/tdtc
+      样例 dtc1pqqqsyqcyq5rqwzqfpg9scrgwpugpzysnzs23v9ccrydpk8qarc0s8hfn26
+PSBT: magic "dtpb\xff"，六角色，默认v2风格
+选币 BnB+SRD+knapsack + 未确认UTXO补费计算；存储 SQLite
+验收：两 Ditcoin 钱包交叉签名 PSBT；导入 xpub/bc1 必须报错。
+
+════════ M7 接口（3–4周）════════
+自研HTTP server；cookie + rpcuser/password；rpcallowip白名单
+约45方法：getblockchaininfo/getblock/getblockheader/gettxout/gettxoutsetinfo/
+  getchainstates/loadtxoutset/dumptxoutset/getmempoolinfo/getrawmempool/
+  testmempoolaccept/submitpackage/getmempoolcluster/getmempoolfeeratediagram/
+  getnetworkinfo/getpeerinfo/addnode/createwallet/getnewaddress/listdescriptors/
+  importdescriptors/getbalances/sendtoaddress/send/walletcreatefundedpsbt/
+  walletprocesspsbt/bumpfee/rescanblockchain/getblocktemplate/submitblock/
+  generatetoaddress/estimatesmartfee/validateaddress/getdescriptorinfo/
+  deriveaddresses/decodepsbt/combinepsbt/finalizepsbt/createrawtransaction ...
+REST(同端口,-rest): /rest/{tx,block,block/notxdetails,blockpart?offset&size,headers,
+  blockhashbyheight,blockfilter,blockfilterheaders,spenttxouts,chaininfo.json,
+  getutxos/[checkmempool/],mempool/{info,contents}.json}
+  不可变响应 public,immutable,max-age=86400；可变与错误 no-store
+ZMQ 五topic 三段式 topic|body|LE32seq：hashtx/rawtx/hashblock/rawblock/sequence
+  sequence body = hash+C/D 或 txhash+R/A+LE64 mempool seq；hash反转字节序
+验收：dtc-cli 全命令回归。
+
+════════ M8 三进程+GUI+kernel（4–5周）════════
+dtc-node / dtc-wallet / dtc-gui，经 <datadir>/node.sock
+纯C IPC：UNIX socket + 长度前缀帧 + handle整数表
+★同一 client 线程的调用必须落到同一 server 线程★（避免锁问题、支持嵌套回调）
+dtcoin -m node|wallet|gui，-ipcbind= / -ipcconnect=
+Mining: submitSolution 返回 reason/debug，重复块 reason="duplicate"
+
+libdtckernel.so（有状态库，不透明句柄 + *_create/*_destroy 配对）：
+  dtck_context_options_create/set_chainparams/set_notifications/set_validation_interface
+  dtck_context_create / dtck_context_interrupt
+  dtck_chainstate_manager_options_create(ctx,datadir,blocksdir)
+  dtck_chainstate_manager_create/process_block_header/process_block/
+                          get_best_entry/import_blocks
+  dtck_transaction_check(tx,state)   /* context-free */
+  dtck_script_pubkey_verify(spk,amount,tx,precomp,idx,flags,status)
+回调两组：notifications(block_tip/header_tip/progress/warning_set/warning_unset/
+                        flush_error/fatal_error)
+          validation(block_checked/pow_valid_block/block_connected/block_disconnected)
+API约定：*_create标warn_unused_result；句柄参数标nonnull；const指针=借用视图不转移所有权；
+  传入指针返回后即可释放；数组长度紧跟其指针；
+  ★process_block 返回值不代表区块有效性★（走 block_checked 回调）；
+  ★日志回调来自任意线程、串行化、不得回调其他API（会死锁）★
+Qt 6.8.x C++薄壳仅调 dtc_gui_bridge.h；GUI进程禁止链接kernel
+验收：GUI崩溃不影响node；外部程序链接kernel独立验块。
+
+════════ 测试策略（三层，禁止以"与 Bitcoin Core 一致"为验收标准）════════
+第1层 算法向量：RFC8439/BIP340/BIP32/BIP39/bech32m/descriptor checksum/SipHash/HKDF
+      ★凡改动 salt/标签/版本字节的必须重新生成 Ditcoin 专属向量★
+第2层 自洽性：挖N块→dumptxoutset→新节点reindex→UTXO哈希一致；
+      双节点独立同步→tip/chainwork/UTXO一致；自产快照加载→后台校验匹配；
+      并发出块→reorg后收敛；LWMA稳态/±3×/乱序比值符合预期
+第3层 对抗与隔离：
+  违规块库(全拒)：坏PoW/错nBits/MTP越界/FTL越界/锚点timewarp/负周期时长/
+    超额coinbase/coinbase nLockTime错/coinbase nSequence=0xffffffff/64字节交易/
+    错merkle/错witness commitment/未成熟coinbase/超weight/超sigops
+  mempool性质：diagram单调/无免费中继/驱逐保拓扑/pinning场景
+  ★隔离测试(全拒)★：
+    Bitcoin magic f9beb4d9/0b110907/fabfb5da/1c163f28/46495645 → 立即断开
+    Bitcoin genesis hash → 拒绝
+    bc1/tb1/bcrt1 地址 → 解析报错
+    xpub/xprv/tpub/tprv → 导入报错
+    Bitcoin PSBT magic 70736274ff → 解析报错
+    Bitcoin 快照 magic 7574786fff → 加载报错
+    用 bitcoin_v2_shared_secret salt 的握手 → AEAD认证失败
+每模块 libFuzzer harness（反序列化/脚本/v2包/cluster线性化）
+
+════════ 执行顺序 ════════
+params.c → 目录树+CMake+dtc_interfaces.h → M0 → M1 → (M2 ∥ M6) → M3 → M4 → M5 → M7 → M8
+★第一步先搭自洽性测试框架★（双节点 + reindex断言 + 违规块库 + 隔离测试），
+之后每完成一个模块立即跑三层测试并给出对应向量。
+
+════════ 交付物 ════════
+DITCOIN-SPEC.md（参数表+偏离清单+冻结向量）
+CMake工程 + 各模块静态库
+dtcoin / dtc-cli / dtc-node / dtc-wallet / dtc-gui
+libdtckernel.so + dtckernel.h
+三层测试套件 + Ditcoin专属向量生成脚本
+README（独立实验链 + 代币无价值 + 勿转真实资产 警告）
+
+现在开始：先输出 params.c 完整可编译草案，再输出目录树 + CMakeLists 骨架 +
+dtc_interfaces.h，然后从 M0 crypto 逐模块实现。
