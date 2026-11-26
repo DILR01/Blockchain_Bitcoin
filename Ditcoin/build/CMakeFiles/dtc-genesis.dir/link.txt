@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/dtc-genesis.dir/link.d "CMakeFiles/dtc-genesis.dir/tools/dtc_genesis.c.o" -o dtc-genesis  libdtc_core.a vendor/secp256k1/lib/libsecp256k1.a

@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/cmake_install.cmake",
+		"/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/cmake_install.cmake",
+		"/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

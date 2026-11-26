@@ -1,0 +1,14 @@
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/dtc_core.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/dtc-genesis.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/dtc_tests.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/test.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/edit_cache.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/rebuild_cache.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/CMakeFiles/test.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/CMakeFiles/edit_cache.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/CMakeFiles/rebuild_cache.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/src/CMakeFiles/secp256k1.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/src/CMakeFiles/secp256k1_precomputed.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/src/CMakeFiles/test.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/src/CMakeFiles/edit_cache.dir
+/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/vendor/secp256k1/src/CMakeFiles/rebuild_cache.dir

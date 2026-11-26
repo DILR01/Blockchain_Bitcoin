@@ -1,0 +1,2073 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    searched_directories:
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/uname"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/uname"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/uname"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/uname"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/uname"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/uname"
+      - "/home/dr-2/.local/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/sbin/uname"
+      - "/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Linux - 6.16.8+kali-amd64 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    searched_directories:
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/gmake"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/gmake"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/gmake"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/gmake"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/gmake"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/gmake"
+      - "/home/dr-2/.local/bin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/usr/local/bin/gmake"
+    found: "/usr/bin/gmake"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    searched_directories:
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/cc"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/cc"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/cc"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/cc"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/cc"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/cc"
+      - "/home/dr-2/.local/bin/cc"
+      - "/usr/local/sbin/cc"
+      - "/usr/sbin/cc"
+      - "/sbin/cc"
+      - "/usr/local/bin/cc"
+    found: "/usr/bin/cc"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/"
+    found: "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/4.4.5/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/dlltool"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/dlltool"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/dlltool"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/dlltool"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/dlltool"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/dlltool"
+      - "/home/dr-2/.local/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/local/games/dlltool"
+      - "/usr/games/dlltool"
+      - "/home/dr-2/.dotnet/tools/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/tapi"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/tapi"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/tapi"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/tapi"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/tapi"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/tapi"
+      - "/home/dr-2/.local/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/local/games/tapi"
+      - "/usr/games/tapi"
+      - "/home/dr-2/.dotnet/tools/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-15.3"
+      - "gcc-ar-15"
+      - "gcc-ar15"
+      - "gcc-ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    searched_directories:
+      - "/usr/bin/gcc-ar-15.3"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/gcc-ar-15.3"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/gcc-ar-15.3"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/gcc-ar-15.3"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/gcc-ar-15.3"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/gcc-ar-15.3"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/gcc-ar-15.3"
+      - "/home/dr-2/.local/bin/gcc-ar-15.3"
+      - "/usr/local/sbin/gcc-ar-15.3"
+      - "/usr/sbin/gcc-ar-15.3"
+      - "/sbin/gcc-ar-15.3"
+      - "/usr/local/bin/gcc-ar-15.3"
+      - "/bin/gcc-ar-15.3"
+      - "/usr/local/games/gcc-ar-15.3"
+      - "/usr/games/gcc-ar-15.3"
+      - "/home/dr-2/.dotnet/tools/gcc-ar-15.3"
+    found: "/usr/bin/gcc-ar-15"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-15.3"
+      - "gcc-ranlib-15"
+      - "gcc-ranlib15"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+    searched_directories:
+      - "/usr/bin/gcc-ranlib-15.3"
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/gcc-ranlib-15.3"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/gcc-ranlib-15.3"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/gcc-ranlib-15.3"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/gcc-ranlib-15.3"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/gcc-ranlib-15.3"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/gcc-ranlib-15.3"
+      - "/home/dr-2/.local/bin/gcc-ranlib-15.3"
+      - "/usr/local/sbin/gcc-ranlib-15.3"
+      - "/usr/sbin/gcc-ranlib-15.3"
+      - "/sbin/gcc-ranlib-15.3"
+      - "/usr/local/bin/gcc-ranlib-15.3"
+      - "/bin/gcc-ranlib-15.3"
+      - "/usr/local/games/gcc-ranlib-15.3"
+      - "/usr/games/gcc-ranlib-15.3"
+      - "/home/dr-2/.dotnet/tools/gcc-ranlib-15.3"
+    found: "/usr/bin/gcc-ranlib-15"
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-K9aFaX"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-K9aFaX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-K9aFaX'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7656c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7656c.dir/build.make CMakeFiles/cmTC_7656c.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-K9aFaX'
+        Building C object CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -c /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 15.3.0-5' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-15-15.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-15-15.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.3.0 (Debian 15.3.0-5) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7656c.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7656c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccxL2hgN.s
+        GNU C23 (Debian 15.3.0-5) version 15.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 15.3.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.28-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/15/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: ed7375bbe925d7efdbcc7c675ec4e103
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7656c.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o /tmp/ccxL2hgN.s
+        GNU assembler version 2.47.50 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.47.50.20261021
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_7656c
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7656c.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 15.3.0-5' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-15-15.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-15-15.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.3.0 (Debian 15.3.0-5) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7656c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7656c.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZIOIj4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7656c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 15.3.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZIOIj4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7656c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.47.50.20261021
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7656c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7656c.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -o cmTC_7656c
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-K9aFaX'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/15/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/15/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
+        ignore line: [Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-K9aFaX']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7656c/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7656c.dir/build.make CMakeFiles/cmTC_7656c.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-K9aFaX']
+        ignore line: [Building C object CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -c /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 15.3.0-5' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-15-15.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-15-15.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.3.0 (Debian 15.3.0-5) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7656c.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7656c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccxL2hgN.s]
+        ignore line: [GNU C23 (Debian 15.3.0-5) version 15.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.3.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.28-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: ed7375bbe925d7efdbcc7c675ec4e103]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7656c.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o /tmp/ccxL2hgN.s]
+        ignore line: [GNU assembler version 2.47.50 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.47.50.20261021]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_7656c]
+        ignore line: [/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7656c.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 15.3.0-5' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-15-15.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-15-15.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.3.0 (Debian 15.3.0-5) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7656c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7656c.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZIOIj4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7656c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccZIOIj4.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7656c] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 15.3.0]
+        link line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZIOIj4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7656c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> linker [/usr/bin/ld]
+        link line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZIOIj4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7656c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZIOIj4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7656c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7656c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld -m;elf
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15] ==> [/usr/lib/gcc/x86_64-linux-gnu/15]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/15;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.47.50.20261021
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "vendor/secp256k1/cmake/CheckX86_64Assembly.cmake:4 (check_c_source_compiles)"
+      - "vendor/secp256k1/CMakeLists.txt:123 (check_x86_64_assembly)"
+    checks:
+      - "Performing Test HAVE_X86_64_ASM"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-ubGyKP"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-ubGyKP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "HAVE_X86_64_ASM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-ubGyKP'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b44e9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b44e9.dir/build.make CMakeFiles/cmTC_b44e9.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-ubGyKP'
+        Building C object CMakeFiles/cmTC_b44e9.dir/src.c.o
+        /usr/bin/cc -DHAVE_X86_64_ASM  -std=c90 -o CMakeFiles/cmTC_b44e9.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-ubGyKP/src.c
+        Linking C executable cmTC_b44e9
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b44e9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_b44e9.dir/src.c.o -o cmTC_b44e9
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-ubGyKP'
+        
+      exitCode: 0
+  -
+    kind: "find-v1"
+    backtrace:
+      - "vendor/secp256k1/cmake/FindValgrind.cmake:16 (find_path)"
+      - "vendor/secp256k1/CMakeLists.txt:147 (find_package)"
+    mode: "path"
+    variable: "Valgrind_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "valgrind/memcheck.h"
+    candidate_directories:
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/"
+      - "/home/dr-2/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/games/"
+      - "/usr/games/"
+      - "/home/dr-2/.dotnet/tools/"
+      - "/usr/local/include/x86_64-linux-gnu/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/x86_64-linux-gnu/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/x86_64-linux-gnu/"
+      - "/include/"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/include/x86_64-linux-gnu/"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/include/"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/"
+      - "/usr/X11R6/include/x86_64-linux-gnu/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/x86_64-linux-gnu/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/x86_64-linux-gnu/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin/valgrind/memcheck.h"
+      - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin/valgrind/memcheck.h"
+      - "/home/dr-2/.nvm/versions/node/v16.20.2/bin/valgrind/memcheck.h"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains/valgrind/memcheck.h"
+      - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin/valgrind/memcheck.h"
+      - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64/valgrind/memcheck.h"
+      - "/home/dr-2/.local/bin/valgrind/memcheck.h"
+      - "/usr/local/sbin/valgrind/memcheck.h"
+      - "/usr/sbin/valgrind/memcheck.h"
+      - "/sbin/valgrind/memcheck.h"
+      - "/usr/local/bin/valgrind/memcheck.h"
+      - "/usr/bin/valgrind/memcheck.h"
+      - "/bin/valgrind/memcheck.h"
+      - "/usr/local/games/valgrind/memcheck.h"
+      - "/usr/games/valgrind/memcheck.h"
+      - "/home/dr-2/.dotnet/tools/valgrind/memcheck.h"
+      - "/usr/local/include/x86_64-linux-gnu/valgrind/memcheck.h"
+      - "/usr/local/include/valgrind/memcheck.h"
+      - "/usr/local/valgrind/memcheck.h"
+      - "/usr/include/x86_64-linux-gnu/valgrind/memcheck.h"
+      - "/usr/include/valgrind/memcheck.h"
+      - "/usr/valgrind/memcheck.h"
+      - "/include/x86_64-linux-gnu/valgrind/memcheck.h"
+      - "/include/valgrind/memcheck.h"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/include/x86_64-linux-gnu/valgrind/memcheck.h"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/include/valgrind/memcheck.h"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/valgrind/memcheck.h"
+      - "/usr/X11R6/include/x86_64-linux-gnu/valgrind/memcheck.h"
+      - "/usr/X11R6/include/valgrind/memcheck.h"
+      - "/usr/X11R6/valgrind/memcheck.h"
+      - "/usr/pkg/include/x86_64-linux-gnu/valgrind/memcheck.h"
+      - "/usr/pkg/include/valgrind/memcheck.h"
+      - "/usr/pkg/valgrind/memcheck.h"
+      - "/opt/include/x86_64-linux-gnu/valgrind/memcheck.h"
+      - "/opt/include/valgrind/memcheck.h"
+      - "/opt/valgrind/memcheck.h"
+      - "/usr/include/X11/valgrind/memcheck.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/usr/share/trae-cn/resources/app/modules/ai-agent/bin"
+        - "/home/dr-2/.trae-cn/plugins/trae-remote-official/lark/1.0.8/bin"
+        - "/home/dr-2/.nvm/versions/node/v16.20.2/bin"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/sdk/default/openharmony/toolchains"
+        - "/home/dr-2/DR-2/Huawei_hdc_cli/commandline-tools-linux-x64-26.0.0.865/command-line-tools/bin"
+        - "/home/dr-2/DR-2/rce_tools/antsword/AntSword-Loader-v4.0.3-linux-x64"
+        - "/home/dr-2/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/games"
+        - "/usr/games"
+        - "/home/dr-2/.dotnet/tools"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:237 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WALL"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-jROsvU"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-jROsvU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-jROsvU'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce881/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ce881.dir/build.make CMakeFiles/cmTC_ce881.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-jROsvU'
+        Building C object CMakeFiles/cmTC_ce881.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WALL  -Werror -std=c90   -Wall -o CMakeFiles/cmTC_ce881.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-jROsvU/src.c
+        Linking C static library libcmTC_ce881.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_ce881.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce881.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_ce881.a CMakeFiles/cmTC_ce881.dir/src.c.o
+        /usr/bin/ranlib libcmTC_ce881.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-jROsvU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:246 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__PEDANTIC"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-VK3jil"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-VK3jil"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-VK3jil'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5dd5e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5dd5e.dir/build.make CMakeFiles/cmTC_5dd5e.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-VK3jil'
+        Building C object CMakeFiles/cmTC_5dd5e.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__PEDANTIC  -Werror -std=c90   -pedantic -o CMakeFiles/cmTC_5dd5e.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-VK3jil/src.c
+        Linking C static library libcmTC_5dd5e.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_5dd5e.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5dd5e.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_5dd5e.a CMakeFiles/cmTC_5dd5e.dir/src.c.o
+        /usr/bin/ranlib libcmTC_5dd5e.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-VK3jil'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:247 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WCAST_ALIGN"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-xZ8tb5"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-xZ8tb5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WCAST_ALIGN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-xZ8tb5'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_baf88/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_baf88.dir/build.make CMakeFiles/cmTC_baf88.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-xZ8tb5'
+        Building C object CMakeFiles/cmTC_baf88.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WCAST_ALIGN  -Werror -std=c90   -Wcast-align -o CMakeFiles/cmTC_baf88.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-xZ8tb5/src.c
+        Linking C static library libcmTC_baf88.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_baf88.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baf88.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_baf88.a CMakeFiles/cmTC_baf88.dir/src.c.o
+        /usr/bin/ranlib libcmTC_baf88.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-xZ8tb5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:248 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WCAST_ALIGN_STRICT"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tO79Ig"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tO79Ig"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WCAST_ALIGN_STRICT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tO79Ig'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b0cd8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b0cd8.dir/build.make CMakeFiles/cmTC_b0cd8.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tO79Ig'
+        Building C object CMakeFiles/cmTC_b0cd8.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WCAST_ALIGN_STRICT  -Werror -std=c90   -Wcast-align=strict -o CMakeFiles/cmTC_b0cd8.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tO79Ig/src.c
+        Linking C static library libcmTC_b0cd8.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_b0cd8.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0cd8.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_b0cd8.a CMakeFiles/cmTC_b0cd8.dir/src.c.o
+        /usr/bin/ranlib libcmTC_b0cd8.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tO79Ig'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:249 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WCONDITIONAL_UNINITIALIZED"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-RAhzxP"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-RAhzxP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WCONDITIONAL_UNINITIALIZED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-RAhzxP'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_37d67/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_37d67.dir/build.make CMakeFiles/cmTC_37d67.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-RAhzxP'
+        Building C object CMakeFiles/cmTC_37d67.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WCONDITIONAL_UNINITIALIZED  -Werror -std=c90   -Wconditional-uninitialized -o CMakeFiles/cmTC_37d67.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-RAhzxP/src.c
+        cc: error: unrecognized command-line option '-Wconditional-uninitialized'; did you mean '-Wno-uninitialized'?
+        gmake[1]: *** [CMakeFiles/cmTC_37d67.dir/build.make:81: CMakeFiles/cmTC_37d67.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-RAhzxP'
+        gmake: *** [Makefile:134: cmTC_37d67/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:250 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WEXTRA"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-CQDryx"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-CQDryx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-CQDryx'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_095b3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_095b3.dir/build.make CMakeFiles/cmTC_095b3.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-CQDryx'
+        Building C object CMakeFiles/cmTC_095b3.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WEXTRA  -Werror -std=c90   -Wextra -o CMakeFiles/cmTC_095b3.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-CQDryx/src.c
+        Linking C static library libcmTC_095b3.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_095b3.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_095b3.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_095b3.a CMakeFiles/cmTC_095b3.dir/src.c.o
+        /usr/bin/ranlib libcmTC_095b3.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-CQDryx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:251 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WLEADING_WHITESPACE_SPACES"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-AOu0Oy"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-AOu0Oy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WLEADING_WHITESPACE_SPACES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-AOu0Oy'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2c9f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e2c9f.dir/build.make CMakeFiles/cmTC_e2c9f.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-AOu0Oy'
+        Building C object CMakeFiles/cmTC_e2c9f.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WLEADING_WHITESPACE_SPACES  -Werror -std=c90   -Wleading-whitespace=spaces -o CMakeFiles/cmTC_e2c9f.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-AOu0Oy/src.c
+        Linking C static library libcmTC_e2c9f.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_e2c9f.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2c9f.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_e2c9f.a CMakeFiles/cmTC_e2c9f.dir/src.c.o
+        /usr/bin/ranlib libcmTC_e2c9f.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-AOu0Oy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:252 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WNESTED_EXTERNS"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-08aBlO"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-08aBlO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WNESTED_EXTERNS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-08aBlO'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cf540/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cf540.dir/build.make CMakeFiles/cmTC_cf540.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-08aBlO'
+        Building C object CMakeFiles/cmTC_cf540.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WNESTED_EXTERNS  -Werror -std=c90   -Wnested-externs -o CMakeFiles/cmTC_cf540.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-08aBlO/src.c
+        Linking C static library libcmTC_cf540.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_cf540.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf540.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_cf540.a CMakeFiles/cmTC_cf540.dir/src.c.o
+        /usr/bin/ranlib libcmTC_cf540.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-08aBlO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:253 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WNO_LONG_LONG"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tkCxNV"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tkCxNV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WNO_LONG_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tkCxNV'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8d0ca/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8d0ca.dir/build.make CMakeFiles/cmTC_8d0ca.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tkCxNV'
+        Building C object CMakeFiles/cmTC_8d0ca.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WNO_LONG_LONG  -Werror -std=c90   -Wno-long-long -o CMakeFiles/cmTC_8d0ca.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tkCxNV/src.c
+        Linking C static library libcmTC_8d0ca.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_8d0ca.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d0ca.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_8d0ca.a CMakeFiles/cmTC_8d0ca.dir/src.c.o
+        /usr/bin/ranlib libcmTC_8d0ca.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-tkCxNV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:254 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WNO_OVERLENGTH_STRINGS"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-KPkiLt"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-KPkiLt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WNO_OVERLENGTH_STRINGS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-KPkiLt'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0cd97/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0cd97.dir/build.make CMakeFiles/cmTC_0cd97.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-KPkiLt'
+        Building C object CMakeFiles/cmTC_0cd97.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WNO_OVERLENGTH_STRINGS  -Werror -std=c90   -Wno-overlength-strings -o CMakeFiles/cmTC_0cd97.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-KPkiLt/src.c
+        Linking C static library libcmTC_0cd97.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_0cd97.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cd97.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_0cd97.a CMakeFiles/cmTC_0cd97.dir/src.c.o
+        /usr/bin/ranlib libcmTC_0cd97.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-KPkiLt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:255 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WNO_UNUSED_FUNCTION"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-zni6FM"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-zni6FM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WNO_UNUSED_FUNCTION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-zni6FM'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d938c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d938c.dir/build.make CMakeFiles/cmTC_d938c.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-zni6FM'
+        Building C object CMakeFiles/cmTC_d938c.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WNO_UNUSED_FUNCTION  -Werror -std=c90   -Wno-unused-function -o CMakeFiles/cmTC_d938c.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-zni6FM/src.c
+        Linking C static library libcmTC_d938c.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_d938c.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d938c.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_d938c.a CMakeFiles/cmTC_d938c.dir/src.c.o
+        /usr/bin/ranlib libcmTC_d938c.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-zni6FM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:256 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WRESERVED_IDENTIFIER"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2eZe1f"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2eZe1f"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WRESERVED_IDENTIFIER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2eZe1f'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ddc9a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ddc9a.dir/build.make CMakeFiles/cmTC_ddc9a.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2eZe1f'
+        Building C object CMakeFiles/cmTC_ddc9a.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WRESERVED_IDENTIFIER  -Werror -std=c90   -Wreserved-identifier -o CMakeFiles/cmTC_ddc9a.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2eZe1f/src.c
+        cc: error: unrecognized command-line option '-Wreserved-identifier'; did you mean '-fextended-identifiers'?
+        gmake[1]: *** [CMakeFiles/cmTC_ddc9a.dir/build.make:81: CMakeFiles/cmTC_ddc9a.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2eZe1f'
+        gmake: *** [Makefile:134: cmTC_ddc9a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:257 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WSHADOW"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-SM5imY"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-SM5imY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-SM5imY'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df13b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_df13b.dir/build.make CMakeFiles/cmTC_df13b.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-SM5imY'
+        Building C object CMakeFiles/cmTC_df13b.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WSHADOW  -Werror -std=c90   -Wshadow -o CMakeFiles/cmTC_df13b.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-SM5imY/src.c
+        Linking C static library libcmTC_df13b.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_df13b.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df13b.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_df13b.a CMakeFiles/cmTC_df13b.dir/src.c.o
+        /usr/bin/ranlib libcmTC_df13b.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-SM5imY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:258 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WSTRICT_PROTOTYPES"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2Q2ey2"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2Q2ey2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WSTRICT_PROTOTYPES"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2Q2ey2'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_15c40/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_15c40.dir/build.make CMakeFiles/cmTC_15c40.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2Q2ey2'
+        Building C object CMakeFiles/cmTC_15c40.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WSTRICT_PROTOTYPES  -Werror -std=c90   -Wstrict-prototypes -o CMakeFiles/cmTC_15c40.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2Q2ey2/src.c
+        Linking C static library libcmTC_15c40.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_15c40.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15c40.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_15c40.a CMakeFiles/cmTC_15c40.dir/src.c.o
+        /usr/bin/ranlib libcmTC_15c40.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-2Q2ey2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:259 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WTRAILING_WHITESPACE_ANY"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-Guq4s9"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-Guq4s9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WTRAILING_WHITESPACE_ANY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-Guq4s9'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3f3c7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3f3c7.dir/build.make CMakeFiles/cmTC_3f3c7.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-Guq4s9'
+        Building C object CMakeFiles/cmTC_3f3c7.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WTRAILING_WHITESPACE_ANY  -Werror -std=c90   -Wtrailing-whitespace=any -o CMakeFiles/cmTC_3f3c7.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-Guq4s9/src.c
+        Linking C static library libcmTC_3f3c7.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_3f3c7.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f3c7.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_3f3c7.a CMakeFiles/cmTC_3f3c7.dir/src.c.o
+        /usr/bin/ranlib libcmTC_3f3c7.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-Guq4s9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/dr-2/.local/lib/python3.14/site-packages/cmake/data/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "vendor/secp256k1/cmake/TryAppendCFlags.cmake:22 (check_c_compiler_flag)"
+      - "vendor/secp256k1/CMakeLists.txt:260 (try_append_c_flags)"
+    checks:
+      - "Performing Test C_SUPPORTS__WUNDEF"
+    directories:
+      source: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-wU4D88"
+      binary: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-wU4D88"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/vendor/secp256k1/cmake"
+    buildResult:
+      variable: "C_SUPPORTS__WUNDEF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-wU4D88'
+        
+        Run Build Command(s): /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f895/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5f895.dir/build.make CMakeFiles/cmTC_5f895.dir/build
+        gmake[1]: Entering directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-wU4D88'
+        Building C object CMakeFiles/cmTC_5f895.dir/src.c.o
+        /usr/bin/cc -DC_SUPPORTS__WUNDEF  -Werror -std=c90   -Wundef -o CMakeFiles/cmTC_5f895.dir/src.c.o -c /home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-wU4D88/src.c
+        Linking C static library libcmTC_5f895.a
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -P CMakeFiles/cmTC_5f895.dir/cmake_clean_target.cmake
+        /home/dr-2/.local/lib/python3.14/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f895.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcmTC_5f895.a CMakeFiles/cmTC_5f895.dir/src.c.o
+        /usr/bin/ranlib libcmTC_5f895.a
+        gmake[1]: Leaving directory '/home/dr-2/DR-2/AI/Trae/Blockchain_Bitcoin/Ditcoin/build/CMakeFiles/CMakeScratch/TryCompile-wU4D88'
+        
+      exitCode: 0
+...
